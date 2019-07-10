@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.adriyansahefendinoor.myhotel.ProfilActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150sp"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        app:srcCompat="@drawable/aston_dua" />
+
+    <EditText
+        android:id="@+id/tv_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_nama"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:hint="masukkan alamat"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/tv_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_alamat"
+        android:layout_alignStart="@+id/tv_alamat"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="28dp"
+        android:hint="masukkan nama"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_alamat"
+        android:layout_alignStart="@+id/tv_alamat"
+        android:layout_below="@+id/tv_alamat"
+        android:layout_marginTop="12dp"
+
+        android:hint="masukkan username"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Username"
+        android:layout_alignStart="@+id/Username"
+        android:layout_below="@+id/Username"
+        android:layout_marginTop="13dp"
+        android:hint="masukkan password"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/tv_saldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password"
+        android:layout_below="@+id/Password"
+        android:layout_marginTop="15dp"
+        android:hint="masukkan saldo awal"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/tv_nik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_saldo"
+        android:layout_alignStart="@+id/tv_saldo"
+        android:layout_below="@+id/tv_saldo"
+        android:layout_marginTop="15dp"
+        android:hint="masukkan nik"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/logo"
+        android:layout_toStartOf="@+id/logo"
+        android:text="Kembali" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnKembali"
+        android:layout_alignBottom="@+id/btnKembali"
+        android:layout_alignEnd="@+id/tv_alamat"
+        android:layout_alignRight="@+id/tv_alamat"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:text="Ubah" />
+
+
+</RelativeLayout>
